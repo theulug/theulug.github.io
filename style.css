@@ -26,6 +26,10 @@ p {
   padding: 0;
 }
 
+a {
+  color: #F06060;
+}
+
 
 /* * * * *
  * HEADER
@@ -45,16 +49,18 @@ p {
 }
 
 .logo-the {
-  color: #505050;
+  color: #606060;
   font-weight: normal;
 }
 
 .logo-u {
   color: #F60A20;
+  color: #F06060;
 }
 
 main {
   margin: 18px 8px 8px 8px;
+  padding: 1px 0; /* Stop margin collapsing */
   background: white;
 }
 
@@ -68,20 +74,30 @@ main {
 
 .page-title::before {
   font-weight: normal;
-  content: '$ \'';
+  color: #E0E0E0;
+  content: '$ cat \'';
 }
 
 .page-title::after {
   font-weight: normal;
+  color: #E0E0E0;
   content: '\' ↩';
+}
+
+.section-title, .section-title h1, .section-title h2 {
+  color: #606060;
+  font-weight: normal;
 }
 
 .section-title {
   margin-bottom: 18px;
-  border-bottom: thin dashed #E0E0E0; /* Stop margin collapsing */
+  border-bottom: thin dashed #E0E0E0;
+}
 
-  color: #606060;
-  font-weight: normal;
+.section-title h2 {
+  color: #F06060;
+  padding-bottom: 8px;
+  font-size: 12px;
 }
 
 .main-content {
@@ -90,11 +106,33 @@ main {
 
 .main-content p {
   margin-bottom: 18px;
+
+  font-family: 'Roboto Condensed', sans-serif;
   font-size: 18px;
 }
 
+.main-content section {
+  margin-bottom: 36px;
+}
+
+.main-content section:last-child {
+  margin-bottom: 0;
+}
+
 main {
-  padding: 1px 0; /* Stop margin collapsing */
+}
+
+.notice {
+  margin-bottom: 18px;
+  padding: 12px;
+  background: #FEF6D8;
+  border: thin dashed #EEE6C8;
+}
+
+.notice p {
+  margin: 0;
+
+  font-size: 14px;
 }
 
 /* * *

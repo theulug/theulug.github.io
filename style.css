@@ -1,15 +1,106 @@
 body {
   margin: 0;
   padding: 0;
+
+  background: #F0F0F0;
+
   line-height: 1.5;
+
+  color: #505050;
+  font-family: 'Montserrat', sans-serif;
+  text-rendering: optimizeLegibility;
 }
 
 
 h1, h2, h3, h4 {
   margin: 0;
   padding: 0;
+
+  font-size: 27px;
+
+  color: #262526;
 }
 
-h1 {
-  font-size: 36px;
+p {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* * * * *
+ * HEADER
+ */
+.page-header {
+  background: white;
+}
+
+.logo {
+  padding: 18px;
+  font-size: 40.5px;
+
+  line-height: 1;
+  color: #404040;
+
+  font-weight: bold;
+}
+
+.logo-the {
+  color: #505050;
+  font-weight: normal;
+}
+
+.logo-u {
+  color: #F60A20;
+}
+
+main {
+  margin: 18px 8px 8px 8px;
+  background: white;
+}
+
+.article-header {
+  margin: 18px 0;
+}
+
+.page-title {
+  font-weight: bold;
+}
+
+.page-title::before {
+  font-weight: normal;
+  content: '$ \'';
+}
+
+.page-title::after {
+  font-weight: normal;
+  content: '\' ↩';
+}
+
+.section-title {
+  margin-bottom: 18px;
+  border-bottom: thin dashed #E0E0E0; /* Stop margin collapsing */
+
+  color: #606060;
+  font-weight: normal;
+}
+
+.main-content {
+  margin: 18px;
+}
+
+.main-content p {
+  margin-bottom: 18px;
+  font-size: 18px;
+}
+
+main {
+  padding: 1px 0; /* Stop margin collapsing */
+}
+
+/* * *
+ * Mixins
+ */
+.shadowed {
+  background: white;
+  box-shadow: 0px 2px 2px 1px #E0E0E0;
 }

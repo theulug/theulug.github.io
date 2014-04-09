@@ -1,3 +1,8 @@
+* {
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -40,11 +45,14 @@ a {
 
 .logo {
   padding: 18px;
-  font-size: 40.5px;
+  margin: auto;
+
+  max-width: 640px;
 
   line-height: 1;
   color: #404040;
 
+  font-size: 40.5px;
   font-weight: bold;
 }
 
@@ -58,9 +66,15 @@ a {
   color: #F06060;
 }
 
+.main-wrapper {
+  margin: 0 auto;
+  max-width: 640px;
+}
+
 main {
   margin: 18px 8px 8px 8px;
   padding: 1px 0; /* Stop margin collapsing */
+
   background: white;
 }
 
@@ -117,9 +131,6 @@ main {
 
 .main-content section:last-child {
   margin-bottom: 0;
-}
-
-main {
 }
 
 .notice {

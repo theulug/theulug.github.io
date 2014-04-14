@@ -50,7 +50,7 @@ ul, ol {
 }
 
 .logo {
-  padding: 18px;
+  padding: 18px 18px 18px 26px; /* Extra 8px needed to align with content */
   margin: auto;
 
   max-width: 640px;

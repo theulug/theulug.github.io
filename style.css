@@ -84,6 +84,10 @@ main {
   background: white;
 }
 
+figure {
+  margin: 18px 0;
+}
+
 .article-header {
   margin: 18px 0;
 }

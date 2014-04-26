@@ -90,6 +90,9 @@ figure {
 
   background: #FAFAFA;
   border: thin dashed #E0E0E0;
+
+  overflow-x: scroll; 
+  white-space: nowrap;
 }
 
 .article-header {
